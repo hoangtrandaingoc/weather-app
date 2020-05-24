@@ -1,0 +1,32 @@
+.search-city{
+    form{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    input[name="city"],
+    input[name="country"]{
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #f8c72e;
+        border-radius: 0;
+        &:-webkit-autofill {
+            -webkit-box-shadow: inset 0 0 0px 9999px white; //remove background key word
+        }
+    }
+    input:focus{
+        background-color: transparent;
+        outline: none;
+        &:-webkit-autofill {
+            -webkit-box-shadow: inset 0 0 0px 9999px white; //remove background key word
+        }
+    }
+    button{
+        margin-top: -10px;
+    }
+}
+@media only screen and (max-width: 768px){
+    button{
+        margin-top: 20px !important;
+    }
+}
+
